@@ -1,6 +1,6 @@
 #!/bin/bash
 #väljastab kasutajale tervitust “Tere, Kasutajanimi !”
 
-kasutaja=user
+kasutaja=$USER
 
 echo "Tere, $kasutaja !"
