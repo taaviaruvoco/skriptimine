@@ -5,15 +5,15 @@
 osch=0
 echo "1. Unix (Sun Os)"
 echo "2. Linux (Red Hat)"
-echo -n "Select your os choice [1 or 2]? "
+echo -n "Valige oma operatsioonisüsteem [1 või 2]? "
 read osch
 if [ $osch -eq 1 ] ; then #kui kasutaja valis Unix operatsioonisüsteemi
-     echo "You Pick up Unix (Sun Os)"
+     echo "Valisite Unix (Sun Os)"
 else #### nested if i.e. if within if ######
        if [ $osch -eq 2 ] ; then #kui kasutaja valis Linux operatsioonisüsteemi
-             echo "You Pick up Linux (Red Hat)"
+             echo "Valisite Linux (Red Hat)"
        else #kui kasutaja sisestas midagi muud
-             echo "What you don't like Unix/Linux OS."
+             echo "Kas teile ei sobi Unix/Linux OS. :)"
        fi
 fi
 
