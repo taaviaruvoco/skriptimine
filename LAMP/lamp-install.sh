@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Nimi: Taavi Aru
-#skript paigaldab mitteinteraktiivselt Apache2, PHP 7.x ja MySQL 8.0 teenused
+#skript paigaldab mitteinteraktiivselt Apache2, PHP 8.2 ja MySQL 8.0 teenused
 #käivitab need ning prindib lõpus ka raporti
 
 set -e
@@ -40,7 +40,7 @@ fi
   # 4) PHP 7.x
 
 #kontrollime et kas php on paigaldatud, kui ei ole siis paigaldame
-if [ $(dpkg-query -W -f='${Status}' php 2>/dev/null | grep -c 'ok installed') -eq 0 ]; then #kui ei ole paigaldatud
+if [ $(dpkg-query -W -f='${Status}' php8.2 2>/dev/null | grep -c 'ok installed') -eq 0 ]; then #kui ei ole paigaldatud
 # Kui PHP 7.x puudub, siis alles paigaldame
   apt-get install -y php8.2 php8.2-cli php8.2-common php8.2-mysql libapache2-mod-php8.2 || true
   systemctl restart apache2
