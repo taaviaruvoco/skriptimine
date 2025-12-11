@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Nimi: Taavi Aru
+#Skripti nimi: Menüü
 #Skripti kirjeldus: Väljastab kasutajale menüü. Kasutaja valib menüüst endale toidu,
 #mille peale tagastatakse talle kommentaar selle toidu kohta
 
@@ -10,7 +11,7 @@ echo "2) kala ja krõpsud"
 echo "3) supp ja salat"
 
 #küsitakse kasutajalt tema valik mis salvestatakse muutujasse
-echo ""
+echo "" #tühi rida
 echo "Tee oma valik (1 või 2 või 3): "
 read tulemus #kasutaja poolt sisestatud valik
 

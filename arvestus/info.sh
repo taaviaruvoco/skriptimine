@@ -1,8 +1,9 @@
 #!/bin/bash
 
 #Nimi: Taavi Aru
+#Skripti nimi: Info
 #Skripti kirjeldus: skript tervitab sisselogitud kasutajat
-#ning väljastab aja ning kuupäeva
+#ning väljastab info aja ning kuupäeva kohta
 
 #kasutaja info printimine
 kasutaja=$USER
